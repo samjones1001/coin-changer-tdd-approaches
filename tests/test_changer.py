@@ -33,3 +33,5 @@ def test_returns_1_pound_when_passed_100():
     assert changer.change(100) == [100]
 
 
+def test_returns_2_pounds_when_passed_200():
+    assert changer.change(200) == [200]
