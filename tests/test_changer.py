@@ -1,4 +1,4 @@
-from changer.changer import func
+from changer import changer
 
-def test_func():
-    assert func(1) == 2
+def test_returns_1_penny_when_passed_1():
+    assert changer.change(1) == [1]
