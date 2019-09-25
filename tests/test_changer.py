@@ -19,3 +19,11 @@ def test_returns_5p_when_passed_5():
 
 def test_returns_10p_when_passed_10():
     assert changer.change(10) == [10]
+
+
+def test_returns_20p_when_passed_20():
+    assert changer.change(20) == [20]
+
+
+def test_returns_50p_when_passed_50():
+    assert changer.change(50) == [50]
