@@ -3,7 +3,7 @@ def change(amount):
 
 
 def _get_coins(amount):
-    for coin in (50, 20, 10, 5, 2, 1):
+    for coin in (100, 50, 20, 10, 5, 2, 1):
         while amount >= coin:
             amount -= coin
             yield coin

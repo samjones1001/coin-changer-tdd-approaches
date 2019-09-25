@@ -27,3 +27,9 @@ def test_returns_20p_when_passed_20():
 
 def test_returns_50p_when_passed_50():
     assert changer.change(50) == [50]
+
+
+def test_returns_1_pound_when_passed_100():
+    assert changer.change(100) == [100]
+
+
