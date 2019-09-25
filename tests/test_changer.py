@@ -17,3 +17,5 @@ def test_returns_5p_when_passed_5():
     assert changer.change(5) == [5]
 
 
+def test_returns_10p_when_passed_10():
+    assert changer.change(10) == [10]

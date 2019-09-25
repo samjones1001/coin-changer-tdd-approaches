@@ -1,12 +1,9 @@
 def change(amount):
-    coins = []
-    while amount > 0:
-        coin = _get_coin(amount)
-        amount -= coin
-        coins.append(coin)
-    return coins
+    return [coin for coin in _get_max_denomination(amount)]
 
 
-def _get_coin(amount):
-    for coin in (5, 2, 1):
-        if amount >= coin: return coin
+def _get_max_denomination(amount):
+    for coin in (10, 5, 2, 1):
+        while amount >= coin:
+            amount -= coin
+            yield coin
