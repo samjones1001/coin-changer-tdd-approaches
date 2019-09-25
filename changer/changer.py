@@ -8,5 +8,5 @@ def change(amount):
 
 
 def _get_coin(amount):
-    for coin in (2, 1):
+    for coin in (5, 2, 1):
         if amount >= coin: return coin
