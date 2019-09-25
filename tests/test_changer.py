@@ -19,3 +19,9 @@ def test_it_correctly_handles_sums_requiring_3_coins():
     assert changer.change(9) == [5, 2, 2]
     assert changer.change(13) == [10, 2, 1]
     assert changer.change(23) == [20, 2, 1]
+
+
+def test_it_correctly_handles_sums_requiring_many_coins():
+    assert changer.change(73) == [50, 20, 2, 1]
+    assert changer.change(237) == [200, 20, 10, 5, 2]
+    assert changer.change(349) == [200, 100, 20, 20, 5, 2, 2]
